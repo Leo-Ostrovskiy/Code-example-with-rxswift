@@ -2,7 +2,7 @@ import RxCocoa
 import RxSwift
 import RxFlow
 
-public class CashAndSpendingMenuViewModel: RxViewModelProtocol, Stepper {
+public class ViewModel: RxViewModelProtocol, Stepper {
   struct Input {
     let onCloseButtonTap: PublishRelay<Void>
   }
@@ -22,8 +22,8 @@ public class CashAndSpendingMenuViewModel: RxViewModelProtocol, Stepper {
     value: [
       MenuOptionModel(
         imageName: IcNames.IcCash,
-        title: "CashAndSpendingMenuViewModel.UpdateAccountBalance.Title".localizationString,
-        step: AppStep.updateAccountBalanceRequired
+        title: "ViewModel.Title".localizationString,
+        step: AppStep.titleStep
       )
     ]
   )

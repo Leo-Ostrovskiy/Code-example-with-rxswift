@@ -7,7 +7,7 @@ class MenuPopUpViewController: UIViewController {
     .lightContent
   }
 
-  var viewModel: CashAndSpendingMenuViewModel!
+  var viewModel: ViewModel!
   private var optionViewsCollection: [MenuOptionView] = []
   private let disposeBag = DisposeBag()
 
